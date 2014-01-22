@@ -38,6 +38,7 @@ SassySketchingGenerator.prototype.askFor = function askFor() {
     message: 'What should the wrapper max-width be (specify units)?',
     default: '1120px'
   }, {
+    // Todo: only ask for this if singularity enabled
     type: 'input',
     name: 'columns',
     message: 'How many grid columns should there be?',
@@ -57,6 +58,11 @@ SassySketchingGenerator.prototype.askFor = function askFor() {
 SassySketchingGenerator.prototype.app = function app() {
   this.mkdir('app');
   this.mkdir('app/templates');
+  this.mkdir('app/sass');
+  this.mkdir('dist');
+
+  this.template('gulpfile.js', 'gulpfile.js');
+  this.template('_index.html', 'index.html');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');

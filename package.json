@@ -24,7 +24,13 @@
     "yeoman-generator": "~0.14.0"
   },
   "devDependencies": {
-    "mocha": "~1.14.0"
+    "mocha": "~1.14.0",
+    "gulp-livereload": "~0.2.0",
+    "gulp-embedlr": "~0.5.2",
+    "tiny-lr": "~0.0.5",
+    "gulp-compass": "~1.0.9",
+    "gulp": "~3.4.0",
+    "gulp-util": "~2.2.12"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"

@@ -1,5 +1,46 @@
 {
-  "name": "package",
+  "name": "generator-sassy-sketching",
   "version": "0.0.0",
-  "dependencies": {}
+  "description": "A generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/JamesLefrere/generator-sassy-sketching",
+  "bugs": "https://github.com/JamesLefrere/generator-sassy-sketching/issues",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/JamesLefrere"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JamesLefrere/generator-sassy-sketching.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.14.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "gulp-livereload": "~0.2.0",
+    "gulp-embedlr": "~0.5.2",
+    "tiny-lr": "~0.0.5",
+    "gulp-compass": "~1.0.9",
+    "gulp": "~3.4.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
 }
